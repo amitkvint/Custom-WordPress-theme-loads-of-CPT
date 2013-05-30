@@ -1,0 +1,35 @@
+/* ------------------------ PAGE-CONTACT FORM ------------------------ */
+
+.wpcf7 {
+	background: #19beee;
+}
+.wpcf7 p {
+
+	font-family: 'spoiler_blackregular';
+
+}
+.wpcf7-form-control.wpcf7-textarea {
+
+	width: 75%;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+
+	width: 75%;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+
+	background: #19beee;
+	color: #fff;
+	font-family: 'spoiler_blackregular';
+	font-size: 1em;
+}
+
+.main-content ul li h4{
+	margin-bottom: 1em;
+
+}
+input[type="text"] {
+
+	text-align: right;
+}

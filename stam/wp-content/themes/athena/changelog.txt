@@ -1,0 +1,22 @@
+*** Athena Changelog ***
+
+2012.11.29 - version 1.0.4
+* loop-portfolio.php - Fixed issue with Lightbox not loading Vimeo videos.
+* includes/woocommerce.css - Fixed table background color in the WooCommerce Tabs section.
+
+2012.11.26 - version 1.0.3
+ * includes/theme-functions.php - fixed Subscribe Connect widget title
+ * style.css - Removed background from static homepages
+
+2012.11.06 - version 1.0.2
+ * style.css - Fixed Portfolio Tags in IE8, equal spacing between portfolio items and custom typography options.
+ * css/theme-woocommerce.css - Fixed custom typography issue that caused items products to display stacked due to increased font size.
+ * loop-portfolio.php - Added support for embed videos in the Portfolio template.
+
+2012.09.27 - version 1.0.1
+ * index.php - Added check to prevent Shop component from being loaded if WooCommerce is not activated.
+ * style.css - Fixed Portfolio Slideshow bug on Firefox and table styling.
+ * css/woocommerce.css - Improved WooCommerce widget styling.
+
+2012.09.25 - version 1.0
+ * First release!

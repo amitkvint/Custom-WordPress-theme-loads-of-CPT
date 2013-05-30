@@ -1,0 +1,804 @@
+/*
+
+*******************COLORS*********************
+strong brown (stripes, H2): #743234;
+clear text (on dark bg): #fff;
+normal text (on white bg): #000;
+clear sky (branding, hover, buttons): #19beee;
+**********************************************
+Theme Name: gilat-aviv
+Theme URI: http://gilat-aviv.co.il
+Author: Amit Kvint
+Author URI: http://webifish.com/
+Description: Description
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+ @import url("reset.css");
+ @import url("css/speaker.css");
+ @import url("css/fonts.css");
+
+
+
+
+body {
+	font-family: 'spoiler_regularregular';
+	background: #fff;
+}
+p {
+	font-family: 'spoiler_regularregular';
+
+}
+ul {
+
+	list-style: none;
+}
+ul li {
+
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/* ------------------------ CLEARING ------------------------ */
+
+.clear {
+
+	clear: both;
+}
+
+/* float clearing for IE6 */
+* html .clearfix{
+  height: 1%;
+  overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+  min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+
+/* ------------------------ TYPOGRAPHY ------------------------ */
+
+a {
+
+	font-family: 'spoiler_regularregular';
+}
+
+/* ------------------------ HEADER ------------------------ */
+.info {
+
+	background: #743234;
+	color: #fff;
+	margin: 2em 0 0.8em 0;
+	width: 100%;
+	height: 22px;
+}
+
+.contact {
+
+	float: left;
+	margin-left: 50px;
+}
+.mailto {
+
+	color: #19beee;	
+}
+.contact-upper {
+
+	color: #19beee;	
+}
+.lang {
+
+	float: right;
+	margin-right: 35px;
+}
+
+.lang a {
+
+		color: #fff;
+}
+.branding {
+	background: #19beee;
+	width: 100%;
+	height: 271px;
+}
+
+.branding .faces {
+
+	float: left;
+	text-align: left;
+	padding-left: 25px;
+	padding-top: 25px;
+}
+
+.branding .faces .img {
+	margin: 6px;
+}
+
+.logo {
+	
+	margin: 0 10em 0 3em;
+	background: #fff url('images/logo-cut.png') no-repeat 0 -1px;
+	height: 272px	;
+	width: 300px;
+	position: relative;
+}
+
+.branding .social-media {
+
+	margin: -40px 3em 16px 0;
+
+	}
+
+.branding .social-media .facebook {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('images/facebook-30.png');
+}
+.branding .social-media .youtube {
+	background: url('images/youtube-30.png');
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+.branding .social-media .plus {
+	background: url('images/plus-30.png');
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}
+
+.widget-speaker {
+
+	width: 80px;
+	height: 105px;
+}
+.branding .faces {
+	width: 55%;
+}
+.branding .faces ul {
+ padding: 0;
+ margin: 0;
+}
+.branding .faces li {
+ float:left;
+ padding:0;
+ padding-right:10px;
+}
+.align-faces {
+
+	direction: ltr;
+	margin-left: 10px;
+}
+/* ------------------------ MAIN NAV ------------------------ */
+
+.menu-main-nav-container {
+
+	height: 22px;
+}
+
+/* The container wrapping ul.dropdown */
+#navwrap {
+	float:right;
+	width:100%;
+	background: #743234;
+	margin: 0.75em 0 0.75em 0;
+	/*background: -moz-linear-gradient( top, #600, #300); CSS 3 
+	font: 1.0em "Segoe UI", "Lucida Grande", Verdana, Arial, sans-serif;
+	border-top:1px solid #999;
+	border-bottom:2px solid #000;*/
+	
+}
+/*#navwrap ul li:hover a {
+
+	background: #19beee;
+}*/
+
+/* Top level Unordered list */
+ul.dropdown {
+	list-style:none;
+	float:right;
+	width:100%;
+}
+ 
+ul.dropdown  li{
+	float:right; /* makes horiz list */
+	position:relative; /* hey Submenu ULs, appear below! */
+	margin: 0;
+}
+
+ 
+ul.dropdown a {
+	padding: 0 12px; /*space the items, occupy entire height too.*/
+	margin: -3px 20px 0 0;
+	color:#fff;
+	text-decoration:none;
+/*	text-shadow:0 1px 0 #000;
+*/}
+ 
+/* Style the link hover */
+ul.dropdown li:hover a {
+	background: #743234;
+	/*border-top:1px solid #777;
+	border-bottom: 1px solid #000;
+	border-right:1px solid #666;*/
+}
+ 
+/* Displays the link as blocks. */
+ul.dropdown li ul a {
+	display:block;
+}
+ 
+/* sub menus!!  */
+ 
+ul.dropdown ul {
+	list-style: none;
+	margin:0; /* Appear just below the hovering list */
+	padding:0;
+	width:200px; /* specify the width. */
+	position:absolute; /* needed */
+	z-index:500; /* specify the order */
+}
+ 
+ul.dropdown li ul {
+	top:27px; /* Positioning:Calc with top level horz list height */
+	-moz-box-shadow:0 2px 10px #000; /* CSS 3 */
+}
+ 
+ul.dropdown ul ul {
+	top:0;
+	left:100%; /* Position the sub menus to right. */
+}
+ 
+ul.dropdown ul li {
+	float:none; /* umm.. Appear below the previous one. mmkay? */
+}
+ 
+/* Drop Down! */
+ 
+/* Hide all the dropdowns (submenus) */
+ul.dropdown ul,
+ul.dropdown li:hover ul ul,
+ul.dropdown ul li:hover ul ul
+{ display: none; }
+ 
+/* Display the submenus only when li are hovered */
+ul.dropdown li:hover ul,
+ul.dropdown ul li:hover ul ,
+ul.dropdown ul li ul li:hover ul
+{ display: block;}
+ 
+ul.dropdown li * a:hover {
+/* Change color of links when hovered */
+	background: #19beee;
+	/* background: -moz-linear-gradient( top, #200, #400); CSS 3
+	border-bottom:1px solid #900;
+	border-top:1px solid #222;
+	 */
+}
+
+/* ------------------------ PAGE LAYOUT------------------------ */
+
+.page-wrap {
+
+	width: 990px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.content {
+	width: 100%;
+	margin: 30px auto;
+}
+
+.left-col {
+
+	float: left;
+	width: 520px;/* 500px;*/
+	margin: 0 0 30px 0;
+
+}
+
+.right-col {
+
+	float:right;
+	width: 405px; /*355px;*/
+	margin-right: 0;
+
+}
+
+.watch-video {
+	clear:both;
+	padding: 0 auto;
+	display: block;
+	position: relative;
+	border: 1px solid #743234;	
+	margin-top: 30px;
+}
+
+/* ------------------------ CSS ARROWS ------------------------ */
+
+.arrow-up {
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	
+	border-bottom: 5px solid black;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	
+	border-top: 20px solid #f00;
+}
+
+.arrow-right {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	
+	border-left: 60px solid green;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	
+	border-right:10px solid blue; 
+}
+
+
+/* ------------------------ LEFT COL ------------------------ */
+
+
+.avatar-speakers {
+
+margin: 0 auto;
+}
+.box-speakers{
+ height: 100px;
+ margin-bottom: 10px;
+}
+.box-speakers ul {
+ padding: 0;
+ margin: 0;
+}
+.box-speakers li {
+ float:left;
+ padding:0;
+ padding-right:5px;
+}
+.box-speakers img {
+ padding:0;
+}
+/*
+.avatar-speakers:before {
+
+	content: "";
+	width: 0; 
+	height: 0; 
+	margin-left: 5px;
+	margin-bottom: 50px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #19beee;
+}
+*/
+
+.box-speakers img {
+
+	padding: 5px 10px 5px 5px;
+}
+.box-lectures, 
+.box-workshops, 
+.box-events {
+
+	height:140px;
+	margin-bottom: 10px;
+}
+
+.box-lectures {
+
+	background: #19beee url('images/lectures-box003.png') no-repeat left top;
+}
+
+.box-workshops {
+
+	background: #743234 url('images/workshops-box003.png') no-repeat left top;
+}
+
+.box-events {
+
+	background: #743234 url('images/events-box003.png') no-repeat left top;
+}
+
+.box-lectures h2,
+.box-workshops h2,
+.box-events h2 {
+	padding: 30px 25px;
+	color: #fff;
+	font-family: 'spoiler_regularregular';
+	font-size: 2.3em;
+}
+
+.box-lectures h2:after,
+.box-workshops h2:after,
+.box-events h2:after {
+
+	content: "";
+	display: inline-block;
+	margin-right: 20px;
+	width: 0; 
+	height: 0; 
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent; 
+	border-right: 12px solid white; 
+
+}
+
+.box-lectures h3,
+.box-workshops h3,
+.box-events h3 {
+
+	padding-right: 15px;
+	color: #fff;
+	font-family: 'spoiler_regularregular';
+	font-size: 1em;
+
+}
+
+.latest-posts {
+	display: block;
+	position: relative;
+	border: 1px solid #743234;
+
+}
+
+/*.latest-posts a:last-child {
+	
+	padding-right: 415px;
+
+	}*/
+
+.latest-posts h2 {
+	display: inline-block;
+	height: 22px;
+	background: #743234 url('images/sky-square.gif') no-repeat right top;
+	color: #fff;
+	padding-right: 25px;
+	width: 494px;
+
+}
+
+.latest-posts h2:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	top:6px;
+	right: 0;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+}
+/*
+
+Take a look into that - is this possible at all ?
+
+.latest-posts h2:after {
+
+	content: "";
+	width: 20px; 
+	height: 20px;
+	top:6px;
+	right: 0;
+	background: #19beee;
+	position: absolute;
+	z-index: 2;
+	border-left: 12px solid #19beee;
+	border-right: 12px solid #19beee;
+	border-top: 12px solid #19beee;
+*/
+
+}
+
+/* ------------------------ RIGHT COL ------------------------ */
+
+.comapny-profile {
+
+	width: 100%;
+}
+
+.company-profile p {
+
+	font-family: 'spoiler_regularregular';
+	line-height: 1.3em;
+	font-size: 0.8em;
+	margin-bottom: 0.5em;
+
+}
+.company-profile img {
+	
+	float: right;
+	margin: 0 0 0 10px;
+}
+
+nav.about {
+
+	margin: 0 auto;
+	font-family: 'spoiler_regularregular';
+	font-size: 0.8em;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 15px;
+
+}
+nav.about a{
+
+	padding: 0 7.7px;
+
+}
+nav.about a:after {
+	content: " | ";
+	margin-right: 4px;
+
+}
+
+.new-speakers,
+.recent-events {
+
+	display: block;
+	position: relative;
+	border: 1px solid #743234;
+	margin-bottom: 30px;
+}
+
+.new-speakers a:last-child,
+.recent-events a:last-child {
+	
+	padding-right: 290px;
+
+	}
+
+.new-speakers h2,
+.recent-events h2 {
+	width: 379px;
+	display: inline-block;
+	height: 22px;
+	background: #743234 url('images/sky-square.gif') no-repeat right top;
+	color: #fff;
+	padding-right: 25px;
+
+}
+
+.new-speakers a,
+.recent-events a {
+
+	text-align: right;
+	display: block;
+	margin-right: 5px;
+}
+
+.new-speakers h2:before,
+.recent-events h2:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	top:6px;
+	right: 0;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+}
+
+.speakers-list {
+
+	margin: 0 5px 5px 0;
+}
+
+.recent-events h2 time {
+
+	float: left;
+	margin-left: 25px;
+}
+
+
+
+/* ------------------------ VIDEO ------------------------ */
+
+
+.video-box {
+
+	float: right;
+	background: #000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding: 0;
+	margin: 25px 10px 25px 0;
+	}
+.video-box-small {
+
+	display: inline-block;
+	background: #000;
+	margin: 5px;
+		}
+.watch-video a:last-child,
+	{
+	
+	padding-right: 95px;
+
+	}
+
+.watch-video h2 {
+	width: 97.6%;
+	display: inline-block;
+	height: 22px;
+	background: #743234 url('images/sky-square.gif') no-repeat right top;
+	color: #fff;
+	padding-right: 25px;
+
+}
+
+.watch-video h2:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	top:6px;
+	right: 0;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+}
+
+/* ------------------------ FOOTER ------------------------ */
+
+
+.footer-branding{
+	margin: 0 auto;
+}
+.share {
+	margin-left: 150px;
+
+}
+.footer-branding img {
+	display: block;
+	margin: 0 auto;
+}
+
+.footer-nav-container {
+	width: 50%;
+}
+
+ul.menu {
+	margin: 0 auto;
+	width: 50%;
+}
+#menu-footer-nav ul {
+	margin: 0;
+	padding: 0; 
+	list-style-type: none;
+	list-style-image: none; 
+}
+#menu-footer-nav li {
+	display: inline;
+	padding: 1px;
+}
+#menu-footer-nav a {
+	text-decoration:none;
+	color: #000; 
+	font-size: 0.8em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#menu-footer-nav a:hover {
+	color: #743234; 
+}
+
+.copyright {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+/* ------------------------ SEARCH FORM ------------------------ */
+
+#searchform {
+	float: right;
+}
+#search label {
+
+	display: none;
+}
+.screen-reader-text {
+	display: none;
+}
+#searchform input[type="text"] {
+
+	text-align: left;
+}
+input[type="text"]
+	{
+	width:150px;
+	padding: 0;
+}
+/* ------------------------ QUICK-CONTACT FORM ------------------------ */
+#qcf-style {
+	border-color: #b0b5bf;
+	border-width: 2px;
+}
+#qcf-style h2{
+	text-align: center;
+	display: inline-block;
+	height: 50px;
+	background: #19beee;
+	width: 100%;
+	color: #fff;
+	font-size: 1.3em;
+	padding-right: 5px;
+	height: 55px;
+}
+
+.input {
+	text-align: right;
+}
+input[type="checkbox"] {
+	float: right;
+}
+/* ------------------------ HOME-CONTACT FORM ------------------------ */
+.home-contact {
+	margin-bottom: 10px;
+	padding: 0 auto;
+}
+.home-contact .wpcf7 p {
+	font-size: 1.04em;
+}
+.home-contact .wpcf7{
+	background: #19beee;
+	width: 100%;
+
+}
+.home-contact .wpcf7 .wpcf7-form {
+}
+.home-contact .wpcf7 p {
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 0.5em;
+
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+
+	background: #19beee;
+	color: #fff;
+	font-family: 'spoiler_blackregular';
+	font-size: 0.8em;
+	vertical-align: 8px;
+}
+
+

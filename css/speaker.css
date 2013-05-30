@@ -1,0 +1,207 @@
+ @import url("reset.css");
+
+
+/* ------------------------ LAYOUT ------------------------ */
+
+/*.layout {
+
+	width: 990px;
+	margin-top: 35px;
+}*/
+
+.main-content {
+	width: 55%;
+	float: left;
+	margin-left: 65px;
+
+}
+
+.sidebar-left {
+	width: 160px;
+	float: left;
+}
+
+.marketing {
+
+	width: 160px;
+	height: 360px;
+	background: #ccc;
+
+}
+
+
+
+.sidebar-right {
+
+	float: right;
+	width: 160px;
+
+}
+/* ------------------------ MAIN SPEAKER CONTENT ------------------------ */
+.attachment-medium.widget-speaker {
+
+	float: right;
+	margin: 15px;
+}
+.attachment-large.widget-speaker {
+	float: right;
+	margin: 5px;
+}
+.main-content h1 {
+	width: 100%;
+	display: inline-block;
+	height: 40px;
+	background: #743234 url('../images/sky-big-square.gif') no-repeat right top;
+	color: #fff;
+	padding-right: 45px;
+	vertical-align: 50%;
+	font-size: 2em;
+}
+
+.main-content h1:before {
+	content: "";
+	position: absolute;
+	margin-top: 6px;
+	margin-right: -42px;
+	width: 0; 
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #fff;
+}
+
+.main-content h2 {
+
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #743234;
+	margin-top: -15px;
+	margin-bottom: 15px;
+}
+.main-content h3 {
+	width: 100%;
+	display: inline-block;
+	height: 40px;
+	background: #743234 url('../images/sky-big-square.gif') no-repeat right top;
+	color: #fff;
+	padding-right: 45px;
+	vertical-align: 50%;
+	font-size: 2em;
+}
+
+.main-content h3:before {
+	content: "";
+	position: absolute;
+	margin-top: 6px;
+	margin-right: -42px;
+	width: 0; 
+	height: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #fff;
+}
+/* ------------------------ LEFT SIDEBAR ------------------------ */
+
+.tag-widget-category,
+.tag-widget {
+
+	display: block;
+	position: relative;
+	border: 1px solid #743234;
+	margin-top: 30px;
+}
+
+.tag-widget-category ul,
+.tag-widget ul{
+	list-style: none;
+}
+
+.tag-widget-category a:last-child,
+.tag-widget a:last-child {
+	
+	padding-right: 35px;
+
+	}
+.tag-widget-category h2:last-child,
+.tag-widget h2:last-child {
+	
+	display: none;
+	}
+
+.tag-widget-category h2,
+.tag-widget h2 {
+	width: 133px;
+	display: inline-block;
+	height: 20px;
+	background: #743234 url('../images/sky-square.gif') no-repeat right top;
+	color: #fff;
+	padding-right: 25px;
+
+}
+
+.tag-widget-category h2:before,
+.tag-widget h2:before {
+	content: "";
+	width: 0; 
+	height: 0;
+	top:6px;
+	right: 0;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+}
+
+/* ------------------------ RIGHT SIDEBAR ------------------------ */
+
+.side-nav .execphpwidget ul {
+	list-style: none;
+}
+/* ------------------------ RIGHT MENU WIDGET NAV  ------------------------ */
+
+.side-nav .execphpwidget
+			 {
+
+	display: block;
+	position: relative;
+	border: 1px solid #743234;
+	margin-bottom: 30px;
+}
+
+.side-nav .execphpwidget ul
+			{
+	list-style: none;
+}
+
+.side-nav .execphpwidget
+ 			{
+	
+	padding-right: 0;
+
+	}
+
+.side-nav .execphpwidget a
+			{
+	width: 135px;
+	display: inline-block;
+	height: 20px;
+	background: #743234 url('../images/sky-square.gif') no-repeat right top;
+	color: #fff;
+	padding-right: 25px;
+
+
+}
+
+.side-nav .execphpwidget a:before
+			 {
+	content: "";
+	width: 0; 
+	height: 0;
+	top:6px;
+	right: 0;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #fff;
+}
+
